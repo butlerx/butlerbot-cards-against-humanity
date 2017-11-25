@@ -1,0 +1,43 @@
+{
+  "name": "butlerbot-cards-against-humanity",
+  "version": "1.0.0",
+  "description": "Cards against humanity plugin for butlerbot",
+  "main": "index.js",
+  "author": "butlerx <butlerx@notthe.cloud>",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-lodash": "^2.4.4",
+    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-react": "^7.3.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "husky": "^0.14.3",
+    "lint-staged": "^4.0.3",
+    "prettier-eslint-cli": "^4.1.1"
+  },
+  "lint-staged": {
+    "*.js*": [
+      "prettier-eslint --write",
+      "git add"
+    ]
+  },
+  "@std/esm": {
+    "esm": "js",
+    "cjs": "true"
+  },
+  "dependencies": {
+    "@std/esm": "^0.2.2",
+    "eslint": "^4.11.0",
+    "eslint-config-coderdojo": "^1.0.6",
+    "eslint-plugin-chai-friendly": "^0.4.0",
+    "fs-extra": "^4.0.2",
+    "inflection": "^1.12.0",
+    "irc-colors": "^1.4.1",
+    "jayschema": "^0.3.2",
+    "lodash": "^4.17.4",
+    "sequelize": "^4.23.0"
+  }
+}
