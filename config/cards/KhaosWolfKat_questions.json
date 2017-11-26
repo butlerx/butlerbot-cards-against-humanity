@@ -249,7 +249,8 @@
   },
   {
     "type": "Question",
-    "value": "You know, there's a million fine looking women in the world, dude. But they don't all bring you %s at work. Most of 'em just %s.",
+    "value":
+      "You know, there's a million fine looking women in the world, dude. But they don't all bring you %s at work. Most of 'em just %s.",
     "keep": "Yes",
     "draw": 1,
     "pick": 2,
@@ -289,7 +290,8 @@
   },
   {
     "type": "Question",
-    "value": "Well you can't expect to wield supreme executive power just 'cause some watery tart threw a %s at you!",
+    "value":
+      "Well you can't expect to wield supreme executive power just 'cause some watery tart threw a %s at you!",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,
@@ -361,7 +363,8 @@
   },
   {
     "type": "Question",
-    "value": "The anxiously awaited new season of Firefly is rumoured to kick off with an action packed scene, featuring River Tam's amazing feats of %s!",
+    "value":
+      "The anxiously awaited new season of Firefly is rumoured to kick off with an action packed scene, featuring River Tam's amazing feats of %s!",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,
@@ -593,7 +596,8 @@
   },
   {
     "type": "Question",
-    "value": "I have a dream that one day this nation will rise up and live out the true meaning of its creed:",
+    "value":
+      "I have a dream that one day this nation will rise up and live out the true meaning of its creed:",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,

@@ -145,7 +145,8 @@
   },
   {
     "type": "Question",
-    "value": "In a new Cold War retro movie, the red menace tries to conquer the world through the cunning use of %s.",
+    "value":
+      "In a new Cold War retro movie, the red menace tries to conquer the world through the cunning use of %s.",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,

@@ -2,16 +2,15 @@ import fs from 'fs-extra';
 import JaySchema from 'jayschema';
 import _ from 'lodash';
 import path from 'path';
-import development from './env/development.json';
-import production from './env/production.json';
 
-const config = _.assignIn(
-  {
-    root: path.normalize(`${__dirname}/../..`),
-    cards: [],
-  },
-  process.env.NODE_ENV === 'production' ? production : development,
-);
+const config = conf =>
+  _.assignIn(
+    {
+      root: path.normalize(`${__dirname}/../..`),
+      cards: [],
+    },
+    conf[process.env.NODE_ENV],
+  );
 // Init validator
 const validator = new JaySchema();
 // Define schema to calidate against
@@ -119,23 +118,41 @@ export const cardFiles = {
   Official6thExpansionAnswers: `${__dirname}/../config/cards/Official6thExpansion_answers.json`,
 
   // Official 2012 Holiday Expansion
-  Official2012HolidayExpansionQuestions: `${__dirname}/../config/cards/Official2012HolidayExpansion_questions.json`,
-  Official2012HolidayExpansionAnswers: `${__dirname}/../config/cards/Official2012HolidayExpansion_answers.json`,
+  Official2012HolidayExpansionQuestions: `${
+    __dirname
+  }/../config/cards/Official2012HolidayExpansion_questions.json`,
+  Official2012HolidayExpansionAnswers: `${
+    __dirname
+  }/../config/cards/Official2012HolidayExpansion_answers.json`,
 
   // Official 2013 Holiday Expansion
-  Official2013HolidayExpansionQuestions: `${__dirname}/../config/cards/Official2013HolidayExpansion_questions.json`,
-  Official2013HolidayExpansionAnswers: `${__dirname}/../config/cards/Official2013HolidayExpansion_answers.json`,
+  Official2013HolidayExpansionQuestions: `${
+    __dirname
+  }/../config/cards/Official2013HolidayExpansion_questions.json`,
+  Official2013HolidayExpansionAnswers: `${
+    __dirname
+  }/../config/cards/Official2013HolidayExpansion_answers.json`,
 
   // Official 2014 Holiday Expansion
-  Official2014HolidayExpansionQuestions: `${__dirname}/../config/cards/Official2014HolidayExpansion_questions.json`,
-  Official2014HolidayExpansionAnswers: `${__dirname}/../config/cards/Official2014HolidayExpansion_answers.json`,
+  Official2014HolidayExpansionQuestions: `${
+    __dirname
+  }/../config/cards/Official2014HolidayExpansion_questions.json`,
+  Official2014HolidayExpansionAnswers: `${
+    __dirname
+  }/../config/cards/Official2014HolidayExpansion_answers.json`,
 
   // Official 90's Nostalgia Expansion
-  Official90sNostalgiaExpansionQuestions: `${__dirname}/../config/cards/90sNostalgiaExpansion_questions.json`,
-  Official90sNostalgiaExpansionAnswers: `${__dirname}/../config/cards/90sNostalgiaExpansion_answers.json`,
+  Official90sNostalgiaExpansionQuestions: `${
+    __dirname
+  }/../config/cards/90sNostalgiaExpansion_questions.json`,
+  Official90sNostalgiaExpansionAnswers: `${
+    __dirname
+  }/../config/cards/90sNostalgiaExpansion_answers.json`,
 
   // Official Science Pack Expansion
-  OfficialSciencePackExpansionQuestions: `${__dirname}/../config/cards/ScienceExpansion_questions.json`,
+  OfficialSciencePackExpansionQuestions: `${
+    __dirname
+  }/../config/cards/ScienceExpansion_questions.json`,
   OfficialSciencePackExpansionAnswers: `${__dirname}/../config/cards/ScienceExpansion_answers.json`,
 
   // Bigger Blacker Box Expansion
@@ -146,19 +163,27 @@ export const cardFiles = {
   RejectExpansionAnswers: `${__dirname}/../config/cards/RejectExpansion_answers.json`,
 
   // Game of Thrones Set
-  GameOfThronesExpansionQuestions: `${__dirname}/../config/cards/GameOfThronesExpansion_questions.json`,
+  GameOfThronesExpansionQuestions: `${
+    __dirname
+  }/../config/cards/GameOfThronesExpansion_questions.json`,
   GameOfThronesExpansionAnswers: `${__dirname}/../config/cards/GameOfThronesExpansion_answers.json`,
 
   // House of Cards Against Humanity Set
-  HouseOfCardsAgainstHumanityQuestions: `${__dirname}/../config/cards/HouseOfCardsAgainstHumanityExpansion_questions.json`,
-  HouseOfCardsAgainstHumanityAnswers: `${__dirname}/../config/cards/HouseOfCardsAgainstHumanityExpansion_answers.json`,
+  HouseOfCardsAgainstHumanityQuestions: `${
+    __dirname
+  }/../config/cards/HouseOfCardsAgainstHumanityExpansion_questions.json`,
+  HouseOfCardsAgainstHumanityAnswers: `${
+    __dirname
+  }/../config/cards/HouseOfCardsAgainstHumanityExpansion_answers.json`,
 
   // PAX East 2013 Set
   PAXEast2013ExpansionQuestions: `${__dirname}/../config/cards/PAXEast2013Expansion_questions.json`,
   PAXEast2013ExpansionAnswers: `${__dirname}/../config/cards/PAXEast2013Expansion_answers.json`,
 
   // PAX Prime 2013 Set
-  PAXPrime2013ExpansionQuestions: `${__dirname}/../config/cards/PAXPrime2013Expansion_questions.json`,
+  PAXPrime2013ExpansionQuestions: `${
+    __dirname
+  }/../config/cards/PAXPrime2013Expansion_questions.json`,
   PAXPrime2013ExpansionAnswers: `${__dirname}/../config/cards/PAXPrime2013Expansion_answers.json`,
 
   // PAX East 2014 Set
@@ -166,16 +191,28 @@ export const cardFiles = {
   PAXEast2014ExpansionAnswers: `${__dirname}/../config/cards/PAXEast2014Expansion_answers.json`,
 
   // PAX East Panel 2014 Set
-  PAXEastPanel2014ExpansionQuestions: `${__dirname}/../config/cards/PAXEastPanel2014Expansion_questions.json`,
-  PAXEastPanel2014ExpansionAnswers: `${__dirname}/../config/cards/PAXEastPanel2014Expansion_answers.json`,
+  PAXEastPanel2014ExpansionQuestions: `${
+    __dirname
+  }/../config/cards/PAXEastPanel2014Expansion_questions.json`,
+  PAXEastPanel2014ExpansionAnswers: `${
+    __dirname
+  }/../config/cards/PAXEastPanel2014Expansion_answers.json`,
 
   // PAX Prime Panel 2014 Set
-  PAXPrimePanel2014ExpansionQuestions: `${__dirname}/../config/cards/PAXPrimePanel2014Expansion_questions.json`,
-  PAXPrimePanel2014ExpansionAnswers: `${__dirname}/../config/cards/PAXPrimePanel2014Expansion_answers.json`,
+  PAXPrimePanel2014ExpansionQuestions: `${
+    __dirname
+  }/../config/cards/PAXPrimePanel2014Expansion_questions.json`,
+  PAXPrimePanel2014ExpansionAnswers: `${
+    __dirname
+  }/../config/cards/PAXPrimePanel2014Expansion_answers.json`,
 
   // Not Safe For Humanity Expansion
-  NotSafeForHumanityExpansionQuestions: `${__dirname}/../config/cards/NotSafeForHumanityExpansion_questions.json`,
-  NotSafeForHumanityExpansionAnswers: `${__dirname}/../config/cards/NotSafeForHumanityExpansion_answers.json`,
+  NotSafeForHumanityExpansionQuestions: `${
+    __dirname
+  }/../config/cards/NotSafeForHumanityExpansion_questions.json`,
+  NotSafeForHumanityExpansionAnswers: `${
+    __dirname
+  }/../config/cards/NotSafeForHumanityExpansion_answers.json`,
 
   // Doctor Who Expansion
   DoctorWhoExpansionQuestions: `${__dirname}/../config/cards/DoctorWhoExpansion_questions.json`,
@@ -186,39 +223,63 @@ export const cardFiles = {
   RedbrickAnswers: `${__dirname}/../config/cards/Redbrick_answers.json`,
 
   // Antisocial Injustice Expansion
-  AntisocialInjusticeExpansionQuestions: `${__dirname}/../config/cards/AntisocialInjusticeExpansion_questions.json`,
-  AntisocialInjusticeExpansionAnswers: `${__dirname}/../config/cards/AntisocialInjusticeExpansion_answers.json`,
+  AntisocialInjusticeExpansionQuestions: `${
+    __dirname
+  }/../config/cards/AntisocialInjusticeExpansion_questions.json`,
+  AntisocialInjusticeExpansionAnswers: `${
+    __dirname
+  }/../config/cards/AntisocialInjusticeExpansion_answers.json`,
 
   // Cards Against Matrimony Expansion
-  CardsAgainstMatrimonyExpansionQuestions: `${__dirname}/../config/cards/CardsAgainstMatrimonyExpansion_questions.json`,
-  CardsAgainstMatrimonyExpansionAnswers: `${__dirname}/../config/cards/CardsAgainstMatrimonyExpansion_answers.json`,
+  CardsAgainstMatrimonyExpansionQuestions: `${
+    __dirname
+  }/../config/cards/CardsAgainstMatrimonyExpansion_questions.json`,
+  CardsAgainstMatrimonyExpansionAnswers: `${
+    __dirname
+  }/../config/cards/CardsAgainstMatrimonyExpansion_answers.json`,
 
   // Hackers Against Humanity Expansion
-  HackersAgainstHumanityExpansionQuestions: `${__dirname}/../config/cards/HackersAgainstHumanityExpansion_questions.json`,
-  HackersAgainstHumanityExpansionAnswers: `${__dirname}/../config/cards/HackersAgainstHumanityExpansion_answers.json`,
+  HackersAgainstHumanityExpansionQuestions: `${
+    __dirname
+  }/../config/cards/HackersAgainstHumanityExpansion_questions.json`,
+  HackersAgainstHumanityExpansionAnswers: `${
+    __dirname
+  }/../config/cards/HackersAgainstHumanityExpansion_answers.json`,
 
   // Ladies Against Humanity Expansion
-  LadiesAgainstHumanityExpansionQuestions: `${__dirname}/../config/cards/LadiesAgainstHumanityExpansion_questions.json`,
-  LadiesAgainstHumanityExpansionAnswers: `${__dirname}/../config/cards/LadiesAgainstHumanityExpansion_answers.json`,
+  LadiesAgainstHumanityExpansionQuestions: `${
+    __dirname
+  }/../config/cards/LadiesAgainstHumanityExpansion_questions.json`,
+  LadiesAgainstHumanityExpansionAnswers: `${
+    __dirname
+  }/../config/cards/LadiesAgainstHumanityExpansion_answers.json`,
 
   // Nobilis Reed Expansion
   NobilisReedExpansionQuestions: `${__dirname}/../config/cards/NobilisReedExpansion_questions.json`,
   NobilisReedExpansionAnswers: `${__dirname}/../config/cards/NobilisReedExpansion_answers.json`,
 
   // Rooster Teeth Expansion
-  RoosterTeethExpansionQuestions: `${__dirname}/../config/cards/RoosterTeethExpansion_questions.json`,
+  RoosterTeethExpansionQuestions: `${
+    __dirname
+  }/../config/cards/RoosterTeethExpansion_questions.json`,
   RoosterTeethExpansionAnswers: `${__dirname}/../config/cards/RoosterTeethExpansion_answers.json`,
 
   // DevOps Against Humanity Expansion
-  DevOpsAgainstHumanityExpansionQuestions: `${__dirname}/../config/cards/DevOpsAgainstHumanityExpansion_questions.json`,
-  DevOpsAgainstHumanityExpansionAnswers: `${__dirname}/../config/cards/DevOpsAgainstHumanityExpansion_answers.json`,
+  DevOpsAgainstHumanityExpansionQuestions: `${
+    __dirname
+  }/../config/cards/DevOpsAgainstHumanityExpansion_questions.json`,
+  DevOpsAgainstHumanityExpansionAnswers: `${
+    __dirname
+  }/../config/cards/DevOpsAgainstHumanityExpansion_answers.json`,
 
   // Mr. Man Collection
   MrManCollectionQuestions: `${__dirname}/../config/cards/MrManCollection_questions.json`,
   MrManCollectionAnswers: `${__dirname}/../config/cards/MrManCollection_answers.json`,
 
   // Northernlion Expansion
-  NorthernlionExpansionQuestions: `${__dirname}/../config/cards/NorthernlionExpansion_questions.json`,
+  NorthernlionExpansionQuestions: `${
+    __dirname
+  }/../config/cards/NorthernlionExpansion_questions.json`,
   NorthernlionExpansionAnswers: `${__dirname}/../config/cards/NorthernlionExpansion_answers.json`,
 
   // KhaosWolfKat Expansion
@@ -226,12 +287,20 @@ export const cardFiles = {
   KhaosWolfKatAnswers: `${__dirname}/../config/cards/KhaosWolfKat_answers.json`,
 
   // Raging Psyfags Pack of Shenanigans
-  RagingPsyfagsPackofShenanigansQuestions: `${__dirname}/../config/cards/RagingPsyfagsPackofShenanigans_questions.json`,
-  RagingPsyfagsPackofShenanigansAnswers: `${__dirname}/../config/cards/RagingPsyfagsPackofShenanigans_answers.json`,
+  RagingPsyfagsPackofShenanigansQuestions: `${
+    __dirname
+  }/../config/cards/RagingPsyfagsPackofShenanigans_questions.json`,
+  RagingPsyfagsPackofShenanigansAnswers: `${
+    __dirname
+  }/../config/cards/RagingPsyfagsPackofShenanigans_answers.json`,
 
   // Ridiculously Stupid Expansion
-  RidiculouslyStupidExpansionQuestions: `${__dirname}/../config/cards/RidiculouslyStupidExpansion_questions.json`,
-  RidiculouslyStupidExpansionAnswers: `${__dirname}/../config/cards/RidiculouslyStupidExpansion_answers.json`,
+  RidiculouslyStupidExpansionQuestions: `${
+    __dirname
+  }/../config/cards/RidiculouslyStupidExpansion_questions.json`,
+  RidiculouslyStupidExpansionAnswers: `${
+    __dirname
+  }/../config/cards/RidiculouslyStupidExpansion_answers.json`,
 
   // Disney Expansion
   DisneyExpansionQuestions: `${__dirname}/../config/cards/DisneyExpansion_questions.json`,

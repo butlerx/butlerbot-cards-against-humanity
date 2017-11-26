@@ -169,7 +169,8 @@
   },
   {
     "type": "Question",
-    "value": "Along with something borrowed and something blue, be sure to take %s with you down the aisle.",
+    "value":
+      "Along with something borrowed and something blue, be sure to take %s with you down the aisle.",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,

@@ -233,7 +233,8 @@
   },
   {
     "type": "Answer",
-    "value": "The fractured elements of her psyche reassembled themselves into an exact likeness of a snarling ferret and she self-destructed",
+    "value":
+      "The fractured elements of her psyche reassembled themselves into an exact likeness of a snarling ferret and she self-destructed",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,

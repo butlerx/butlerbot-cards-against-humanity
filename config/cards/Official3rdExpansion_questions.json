@@ -25,7 +25,8 @@
   },
   {
     "type": "Question",
-    "value": "To prepare for his upcoming role, Daniel Day-Lewis immersed himself in the world of %s.",
+    "value":
+      "To prepare for his upcoming role, Daniel Day-Lewis immersed himself in the world of %s.",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,
@@ -57,7 +58,8 @@
   },
   {
     "type": "Question",
-    "value": "Listen, son. If you want to get involved with %s, I won't stop you. Just steer clear of %s.",
+    "value":
+      "Listen, son. If you want to get involved with %s, I won't stop you. Just steer clear of %s.",
     "keep": "Yes",
     "draw": 1,
     "pick": 2,
@@ -73,7 +75,8 @@
   },
   {
     "type": "Question",
-    "value": "Call the law offices of Goldstein & Goldstein, because no one should have to tolerate %s in the workplace.",
+    "value":
+      "Call the law offices of Goldstein & Goldstein, because no one should have to tolerate %s in the workplace.",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,

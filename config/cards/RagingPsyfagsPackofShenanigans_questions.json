@@ -17,7 +17,8 @@
   },
   {
     "type": "Question",
-    "value": "The idiots in that one room at the Westin finally got kicked out of Anthrocon for %s.",
+    "value":
+      "The idiots in that one room at the Westin finally got kicked out of Anthrocon for %s.",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,
@@ -73,7 +74,8 @@
   },
   {
     "type": "Question",
-    "value": "Yu-Gi-Oh players were shocked when the win condition of holding 5 Exodia pieces was replaced by %s, %s, and %s.",
+    "value":
+      "Yu-Gi-Oh players were shocked when the win condition of holding 5 Exodia pieces was replaced by %s, %s, and %s.",
     "keep": "Yes",
     "draw": 2,
     "pick": 3,

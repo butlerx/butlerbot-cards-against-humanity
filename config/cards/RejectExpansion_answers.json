@@ -41,7 +41,8 @@
   },
   {
     "type": "Answer",
-    "value": "A heart that is two sizes too small and that therefore cannot pump an adequate amount of blood",
+    "value":
+      "A heart that is two sizes too small and that therefore cannot pump an adequate amount of blood",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,

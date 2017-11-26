@@ -113,7 +113,8 @@
   },
   {
     "type": "Answer",
-    "value": "Looking up where someone lives because they posted something you didn't like on the internet.",
+    "value":
+      "Looking up where someone lives because they posted something you didn't like on the internet.",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,

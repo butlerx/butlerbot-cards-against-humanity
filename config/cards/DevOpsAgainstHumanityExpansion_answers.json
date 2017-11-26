@@ -2241,7 +2241,8 @@
   },
   {
     "type": "Answer",
-    "value": "Standing around outside on the streets of SOMA with an overheating laptop drunk while fixing your god damn Saturday night deployment.",
+    "value":
+      "Standing around outside on the streets of SOMA with an overheating laptop drunk while fixing your god damn Saturday night deployment.",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,

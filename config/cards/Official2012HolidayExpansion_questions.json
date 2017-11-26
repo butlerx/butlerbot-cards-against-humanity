@@ -41,7 +41,8 @@
   },
   {
     "type": "Question",
-    "value": "On the third day of Christmas, my true love gave to me: three French hens, two turtle doves, and %s.",
+    "value":
+      "On the third day of Christmas, my true love gave to me: three French hens, two turtle doves, and %s.",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,

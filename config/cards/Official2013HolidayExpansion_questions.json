@@ -25,7 +25,8 @@
   },
   {
     "type": "Question",
-    "value": "Kids these days with their iPods and their Internet. In my day all we needed to pass the time was %s.",
+    "value":
+      "Kids these days with their iPods and their Internet. In my day all we needed to pass the time was %s.",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,
@@ -33,7 +34,8 @@
   },
   {
     "type": "Question",
-    "value": "Because they are forbidden from masturbating, Mormons channel their repressed sexual energy into %s.",
+    "value":
+      "Because they are forbidden from masturbating, Mormons channel their repressed sexual energy into %s.",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,
@@ -49,7 +51,8 @@
   },
   {
     "type": "Question",
-    "value": "But wait, there's more! If you order %s in the next 15 minutes, we'll throw in %s absolutely free!",
+    "value":
+      "But wait, there's more! If you order %s in the next 15 minutes, we'll throw in %s absolutely free!",
     "keep": "Yes",
     "draw": 1,
     "pick": 2,

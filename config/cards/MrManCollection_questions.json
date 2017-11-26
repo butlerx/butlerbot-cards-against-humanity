@@ -25,7 +25,8 @@
   },
   {
     "type": "Question",
-    "value": "I finally realized I hit rock bottom when I started digging through dumpsters for %s.",
+    "value":
+      "I finally realized I hit rock bottom when I started digging through dumpsters for %s.",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,
@@ -49,7 +50,8 @@
   },
   {
     "type": "Question",
-    "value": "And it is said his ghost still wanders these halls, forever searching for his lost %s.",
+    "value":
+      "And it is said his ghost still wanders these halls, forever searching for his lost %s.",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,
@@ -113,7 +115,8 @@
   },
   {
     "type": "Question",
-    "value": "With a million times the destructive force of all our nuclear weapons combined, no one was able to survive %s.",
+    "value":
+      "With a million times the destructive force of all our nuclear weapons combined, no one was able to survive %s.",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,
@@ -201,7 +204,8 @@
   },
   {
     "type": "Question",
-    "value": "With the Democrats and Republicans in a dead heat, the election was snatched by the %s party.",
+    "value":
+      "With the Democrats and Republicans in a dead heat, the election was snatched by the %s party.",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,

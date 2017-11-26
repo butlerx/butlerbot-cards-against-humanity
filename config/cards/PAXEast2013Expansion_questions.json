@@ -17,7 +17,8 @@
   },
   {
     "type": "Question",
-    "value": "Action stations! Action stations! Set condition one throughout the fleet and brace for %s!",
+    "value":
+      "Action stations! Action stations! Set condition one throughout the fleet and brace for %s!",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,
@@ -25,7 +26,8 @@
   },
   {
     "type": "Question",
-    "value": "In the final year of this year's Omegathon, Omeganauts must face off in a game of %s.",
+    "value":
+      "In the final year of this year's Omegathon, Omeganauts must face off in a game of %s.",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,
@@ -41,7 +43,8 @@
   },
   {
     "type": "Question",
-    "value": "I don't know exactly how I got the PAX plague, but I suspect it had something to do with %s.",
+    "value":
+      "I don't know exactly how I got the PAX plague, but I suspect it had something to do with %s.",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,

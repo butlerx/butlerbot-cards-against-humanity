@@ -145,7 +145,8 @@
   },
   {
     "type": "Answer",
-    "value": "King Robert Baratheon, First of His Name, King of the Andals and the First Men, Lord Protector of the Realm",
+    "value":
+      "King Robert Baratheon, First of His Name, King of the Andals and the First Men, Lord Protector of the Realm",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,

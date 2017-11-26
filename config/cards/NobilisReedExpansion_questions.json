@@ -1,7 +1,8 @@
 [
   {
     "type": "Question",
-    "value": "When Verity snuck out for her nightly exhibitionist jaunt, she didn't expect to come face to face with %s.",
+    "value":
+      "When Verity snuck out for her nightly exhibitionist jaunt, she didn't expect to come face to face with %s.",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,
@@ -9,7 +10,8 @@
   },
   {
     "type": "Question",
-    "value": "Programmable clothes that can turn into any imaginable garments are great, but didn't the designers consider %s?",
+    "value":
+      "Programmable clothes that can turn into any imaginable garments are great, but didn't the designers consider %s?",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,
@@ -25,7 +27,8 @@
   },
   {
     "type": "Question",
-    "value": "You can satiate any sexual proclivity in Metamor City, if you look hard enough. Even %s.",
+    "value":
+      "You can satiate any sexual proclivity in Metamor City, if you look hard enough. Even %s.",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,
@@ -33,7 +36,8 @@
   },
   {
     "type": "Question",
-    "value": "The new performers in the Artbodies strip club have raised a few eyebrows. Who'd have thought to combine %s with %s?",
+    "value":
+      "The new performers in the Artbodies strip club have raised a few eyebrows. Who'd have thought to combine %s with %s?",
     "keep": "Yes",
     "draw": 1,
     "pick": 2,
@@ -41,7 +45,8 @@
   },
   {
     "type": "Question",
-    "value": "In the next episode of Monster Whisperer, Dale Clearwater helps a %s whose tentacle moster is plagued with %s.",
+    "value":
+      "In the next episode of Monster Whisperer, Dale Clearwater helps a %s whose tentacle moster is plagued with %s.",
     "keep": "Yes",
     "draw": 1,
     "pick": 2,
@@ -57,7 +62,8 @@
   },
   {
     "type": "Question",
-    "value": "Because of the 'accident' yesterday, the Scout Academy now forbids cadets from having any contact whatsoever with %s.",
+    "value":
+      "Because of the 'accident' yesterday, the Scout Academy now forbids cadets from having any contact whatsoever with %s.",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,
@@ -65,7 +71,8 @@
   },
   {
     "type": "Question",
-    "value": "When confronted by an excited tentacle monster, it's best to just relax and think of %s.",
+    "value":
+      "When confronted by an excited tentacle monster, it's best to just relax and think of %s.",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,

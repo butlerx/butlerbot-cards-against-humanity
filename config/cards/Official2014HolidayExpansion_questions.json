@@ -1,7 +1,8 @@
 [
   {
     "type": "Question",
-    "value": "Honey, Mommy and Daddy love you very much. But apparently Mommy loves %s more than she loves Daddy.",
+    "value":
+      "Honey, Mommy and Daddy love you very much. But apparently Mommy loves %s more than she loves Daddy.",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,
@@ -9,7 +10,8 @@
   },
   {
     "type": "Question",
-    "value": "Dear Mom and Dad. Camp is fun. I like capture the flag. Yesterday, one of the older kids taught me about %s. I love you, Casey",
+    "value":
+      "Dear Mom and Dad. Camp is fun. I like capture the flag. Yesterday, one of the older kids taught me about %s. I love you, Casey",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,
@@ -41,7 +43,8 @@
   },
   {
     "type": "Question",
-    "value": "A curse upon thee! Many years from now, just when you think you're safe, %s shall turn into %s.",
+    "value":
+      "A curse upon thee! Many years from now, just when you think you're safe, %s shall turn into %s.",
     "keep": "Yes",
     "draw": 1,
     "pick": 2,

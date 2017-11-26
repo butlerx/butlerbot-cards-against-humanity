@@ -9,7 +9,8 @@
   },
   {
     "type": "Question",
-    "value": "At this new Doctor Who themed restaurant, you can get a free %s if you can eat a plate of bangers and mash in under 3 minutes.",
+    "value":
+      "At this new Doctor Who themed restaurant, you can get a free %s if you can eat a plate of bangers and mash in under 3 minutes.",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,
@@ -25,7 +26,8 @@
   },
   {
     "type": "Question",
-    "value": "They announced a new LEGO Doctor Who game! Rumour has it that %s is an unlockable character.",
+    "value":
+      "They announced a new LEGO Doctor Who game! Rumour has it that %s is an unlockable character.",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,
@@ -41,7 +43,8 @@
   },
   {
     "type": "Question",
-    "value": "It's a little known fact that if you send a %s to the BBC, they will send you a picture of The Doctor.",
+    "value":
+      "It's a little known fact that if you send a %s to the BBC, they will send you a picture of The Doctor.",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,
@@ -73,7 +76,8 @@
   },
   {
     "type": "Question",
-    "value": "Originally, the 50th special was going to have %s appear, but the BBC decided against it in the end.",
+    "value":
+      "Originally, the 50th special was going to have %s appear, but the BBC decided against it in the end.",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,
@@ -113,7 +117,8 @@
   },
   {
     "type": "Question",
-    "value": "Jack Harkness, I can't leave you alone for a minute! I turn around and you're trying to seduce %s.",
+    "value":
+      "Jack Harkness, I can't leave you alone for a minute! I turn around and you're trying to seduce %s.",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,
@@ -121,7 +126,8 @@
   },
   {
     "type": "Question",
-    "value": "The Chameleon curcuit is working again...somewhat. Instead of a phone booth, the TARDIS is now a %s.",
+    "value":
+      "The Chameleon curcuit is working again...somewhat. Instead of a phone booth, the TARDIS is now a %s.",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,

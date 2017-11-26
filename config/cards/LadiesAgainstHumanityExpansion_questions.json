@@ -89,7 +89,8 @@
   },
   {
     "type": "Question",
-    "value": "In her next romcom, Katherine Heigl plays a woman who falls in love with her boss's %s.",
+    "value":
+      "In her next romcom, Katherine Heigl plays a woman who falls in love with her boss's %s.",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,
@@ -169,7 +170,8 @@
   },
   {
     "type": "Question",
-    "value": "Sofia Coppola's new film focuses on a wealthy young white woman feeling alienated by %s.",
+    "value":
+      "Sofia Coppola's new film focuses on a wealthy young white woman feeling alienated by %s.",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,

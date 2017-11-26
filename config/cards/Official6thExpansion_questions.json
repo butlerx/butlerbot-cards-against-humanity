@@ -25,7 +25,8 @@
   },
   {
     "type": "Question",
-    "value": "This is America. If you don't work hard, you don't succeed. I don't care if you're black, white, purple or %s.",
+    "value":
+      "This is America. If you don't work hard, you don't succeed. I don't care if you're black, white, purple or %s.",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,
@@ -41,7 +42,8 @@
   },
   {
     "type": "Question",
-    "value": "James is a lonely boy. But when he discovers a secret door in his attic, he meets a new magical friend: %s.",
+    "value":
+      "James is a lonely boy. But when he discovers a secret door in his attic, he meets a new magical friend: %s.",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,
@@ -57,7 +59,8 @@
   },
   {
     "type": "Question",
-    "value": "My grandfather worked his way up from nothing. When he came to this country, all he had was the shoes on his feet and %s.",
+    "value":
+      "My grandfather worked his way up from nothing. When he came to this country, all he had was the shoes on his feet and %s.",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,
@@ -81,7 +84,8 @@
   },
   {
     "type": "Question",
-    "value": "Come to Dubai, where you can relax in our world-famous spas, experience the nightlife or simply enjoy %s by the poolside.",
+    "value":
+      "Come to Dubai, where you can relax in our world-famous spas, experience the nightlife or simply enjoy %s by the poolside.",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,
@@ -97,7 +101,8 @@
   },
   {
     "type": "Question",
-    "value": "Listen, Gary, I like you. But if you want that corner office, you're going to have to show me %s.",
+    "value":
+      "Listen, Gary, I like you. But if you want that corner office, you're going to have to show me %s.",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,
@@ -121,7 +126,8 @@
   },
   {
     "type": "Question",
-    "value": "The six things I could never do without: oxygen, facebook, chocolate, netflix, friends, and %s LOL!",
+    "value":
+      "The six things I could never do without: oxygen, facebook, chocolate, netflix, friends, and %s LOL!",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,
@@ -137,7 +143,8 @@
   },
   {
     "type": "Question",
-    "value": "Puberty is a time of change. You might notice hair growing in new places. You might develop an interest in %s. This is normal.",
+    "value":
+      "Puberty is a time of change. You might notice hair growing in new places. You might develop an interest in %s. This is normal.",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,
@@ -145,7 +152,8 @@
   },
   {
     "type": "Question",
-    "value": "I'm sorry Mrs. Chen, but there was nothing we could do. At 4:15 this morning, your son succumbed to %s.",
+    "value":
+      "I'm sorry Mrs. Chen, but there was nothing we could do. At 4:15 this morning, your son succumbed to %s.",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,
@@ -153,7 +161,8 @@
   },
   {
     "type": "Question",
-    "value": "I'm Miss Tennessee and if I could make the world better by changing one thing, I would get rid of %s",
+    "value":
+      "I'm Miss Tennessee and if I could make the world better by changing one thing, I would get rid of %s",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,
@@ -169,7 +178,8 @@
   },
   {
     "type": "Question",
-    "value": "Everybody join hands and close your eyes. Do you sense that? That's the presence of %s in this room.",
+    "value":
+      "Everybody join hands and close your eyes. Do you sense that? That's the presence of %s in this room.",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,
@@ -177,7 +187,8 @@
   },
   {
     "type": "Question",
-    "value": "To become a true Yanomamo warrior, you must prove that you can withstand %s without crying out.",
+    "value":
+      "To become a true Yanomamo warrior, you must prove that you can withstand %s without crying out.",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,
@@ -193,7 +204,8 @@
   },
   {
     "type": "Question",
-    "value": "If you had to describe me, the Card Czar, using only one of the cards in your hand, which one would it be?",
+    "value":
+      "If you had to describe me, the Card Czar, using only one of the cards in your hand, which one would it be?",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,

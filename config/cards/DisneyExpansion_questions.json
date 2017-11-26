@@ -25,7 +25,8 @@
   },
   {
     "type": "Question",
-    "value": "For your safety, remain seated with your seat belts fastened, keeping %s inside the bobsled.",
+    "value":
+      "For your safety, remain seated with your seat belts fastened, keeping %s inside the bobsled.",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,

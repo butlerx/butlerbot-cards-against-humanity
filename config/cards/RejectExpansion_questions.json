@@ -9,7 +9,8 @@
   },
   {
     "type": "Question",
-    "value": "The Westboro Baptist Church is now picketing soldiers' funerals with signs that read 'GOD HATES %s'",
+    "value":
+      "The Westboro Baptist Church is now picketing soldiers' funerals with signs that read 'GOD HATES %s'",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,
@@ -49,7 +50,8 @@
   },
   {
     "type": "Question",
-    "value": "Sir, we found you passed out naked on the side of the road. What's the last thing you remember?",
+    "value":
+      "Sir, we found you passed out naked on the side of the road. What's the last thing you remember?",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,

@@ -9,7 +9,8 @@
   },
   {
     "type": "Question",
-    "value": "Dear Leader Kim Jong-un, our village praises your infinite wisdom with a humble offering of %s.",
+    "value":
+      "Dear Leader Kim Jong-un, our village praises your infinite wisdom with a humble offering of %s.",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,
@@ -33,7 +34,8 @@
   },
   {
     "type": "Question",
-    "value": "Alright, bros. Our frathouse is condemned, and all the hot slampieces are over at Gamma Phi. The time has come to commence Operation %s.",
+    "value":
+      "Alright, bros. Our frathouse is condemned, and all the hot slampieces are over at Gamma Phi. The time has come to commence Operation %s.",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,
@@ -57,7 +59,8 @@
   },
   {
     "type": "Question",
-    "value": "You guys, I saw this crazy movie last night. It opens on %s, and then there's some stuff about %s, and then it ends with %s.",
+    "value":
+      "You guys, I saw this crazy movie last night. It opens on %s, and then there's some stuff about %s, and then it ends with %s.",
     "keep": "Yes",
     "draw": 2,
     "pick": 3,
@@ -73,7 +76,8 @@
   },
   {
     "type": "Question",
-    "value": "Wes Anderson's new film tells the story of a precocious child coming to terms with %s.",
+    "value":
+      "Wes Anderson's new film tells the story of a precocious child coming to terms with %s.",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,
@@ -105,7 +109,8 @@
   },
   {
     "type": "Question",
-    "value": "You've seen the bearded lady! You've seen the ring of fire! Now, ladies and gentlemen feast your eyes upon %s!",
+    "value":
+      "You've seen the bearded lady! You've seen the ring of fire! Now, ladies and gentlemen feast your eyes upon %s!",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,
@@ -129,7 +134,8 @@
   },
   {
     "type": "Question",
-    "value": "2 AM in the city that never sleeps. The door swings open and she walks in, legs up to here. Something in her eyes tells me she's looking for %s.",
+    "value":
+      "2 AM in the city that never sleeps. The door swings open and she walks in, legs up to here. Something in her eyes tells me she's looking for %s.",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,

@@ -145,7 +145,8 @@
   },
   {
     "type": "Answer",
-    "value": "The collective wail of every Magic player suddenly realizing that they've spent hundreds of dollars on pieces of cardboard",
+    "value":
+      "The collective wail of every Magic player suddenly realizing that they've spent hundreds of dollars on pieces of cardboard",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,

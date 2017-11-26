@@ -17,7 +17,8 @@
   },
   {
     "type": "Question",
-    "value": "In the distant future, historians will agree that %s marked the beginning of America's decline.",
+    "value":
+      "In the distant future, historians will agree that %s marked the beginning of America's decline.",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,
@@ -33,7 +34,8 @@
   },
   {
     "type": "Question",
-    "value": "This season on Man vs. Wild, Bear Grylls must survive in the depths of the Amazon with only %s and his wits.",
+    "value":
+      "This season on Man vs. Wild, Bear Grylls must survive in the depths of the Amazon with only %s and his wits.",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,
@@ -113,7 +115,8 @@
   },
   {
     "type": "Question",
-    "value": "In its new tourism campaign, Detroit proudly proclaims that it has finally eliminated %s.",
+    "value":
+      "In its new tourism campaign, Detroit proudly proclaims that it has finally eliminated %s.",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,
@@ -129,7 +132,8 @@
   },
   {
     "type": "Question",
-    "value": "The socialist governments of Scandinavia have declared that access to %s is a basic human right.",
+    "value":
+      "The socialist governments of Scandinavia have declared that access to %s is a basic human right.",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,
@@ -145,7 +149,8 @@
   },
   {
     "type": "Question",
-    "value": "Dear Sir or Madam, We regret to inform you that the Office of %s has denied your request for %s.",
+    "value":
+      "Dear Sir or Madam, We regret to inform you that the Office of %s has denied your request for %s.",
     "keep": "Yes",
     "draw": 1,
     "pick": 2,

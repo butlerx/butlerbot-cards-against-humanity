@@ -33,7 +33,9 @@ class Game {
     this.waitCount = 0; // number of times waited until enough players
     this.round = 0; // round number
     this.players = []; // list of players
-    this.playersToAdd = []; // list of players to add after deferring because the game doesn't exist in the database yet
+    // list of players to add after deferring because the game doesn't
+    // exist in the database yet
+    this.playersToAdd = [];
     this.channel = channel; // the channel this game is running on
     this.client = client; // reference to the irc client
     this.config = config; // configuration data
@@ -47,8 +49,9 @@ class Game {
 
     // announce the game on the channel
     this.say(
-      `A new game of ${c.rainbow('Cards Against Humanity')}. The game starts in ${config.gameOptions
-        .secondsBeforeStart} ${inflection.inflect(
+      `A new game of ${c.rainbow('Cards Against Humanity')}. The game starts in ${
+        config.gameOptions.secondsBeforeStart
+      } ${inflection.inflect(
         'seconds',
         config.gameOptions.secondsBeforeStart,
       )}. Type !join to join the game any time.`,
@@ -190,63 +193,59 @@ class Game {
       const round = this.dbCurrentRound;
       let cardString = [];
 
-      this.dbModels.Card
-        .findAll({
-          where: {
-            text: {
-              in: _.map(playerCards, ({ value }) => value),
-            },
+      this.dbModels.Card.findAll({
+        where: {
+          text: {
+            in: _.map(playerCards, ({ value }) => value),
           },
-        })
-        .then((cards) => {
-          if (playerCards.length === 1) {
-            cardString = cards[0].id;
-          } else {
-            _.forEach(playerCards, ({ value }) => {
-              _.forEach(cards, (card) => {
-                if (value === card.text) {
-                  cardString.push(card.id);
-                }
-              });
+        },
+      }).then((cards) => {
+        if (playerCards.length === 1) {
+          cardString = cards[0].id;
+        } else {
+          _.forEach(playerCards, ({ value }) => {
+            _.forEach(cards, (card) => {
+              if (value === card.text) {
+                cardString.push(card.id);
+              }
             });
-
-            cardString = cardString.join(',');
-          }
-
-          this.updateOrCreateInstance(
-            this.dbModels.CardCombo,
-            { where: { game_id: this.dbGame.id, player_id: id, questionID: round.questionID } },
-            {
-              game_id: this.dbGame.id,
-              player_id: id,
-              questionID: round.questionID,
-              answer_ids: cardString,
-              winner: false,
-            },
-            null,
-          );
-
-          // Finally update each of the cards times played count
-          _.forEach(cards, (card) => {
-            card.update({ times_played: card.times_played + 1 });
           });
+
+          cardString = cardString.join(',');
+        }
+
+        this.updateOrCreateInstance(
+          this.dbModels.CardCombo,
+          { where: { game_id: this.dbGame.id, player_id: id, questionID: round.questionID } },
+          {
+            game_id: this.dbGame.id,
+            player_id: id,
+            questionID: round.questionID,
+            answer_ids: cardString,
+            winner: false,
+          },
+          null,
+        );
+
+        // Finally update each of the cards times played count
+        _.forEach(cards, (card) => {
+          card.update({ times_played: card.times_played + 1 });
         });
+      });
     }
   }
 
   createRound(questionID) {
     if (this.config.gameOptions.database === true) {
-      this.dbModels.Round
-        .create({
-          game_id: this.dbGame.id,
-          round_number: this.round,
-          num_active_players: _.filter(this.players, ({ isActive }) => isActive).length,
-          total_players: this.players.length,
-          questionID,
-        })
-        .then((round) => {
-          this.dbCurrentRound = round;
-        });
+      this.dbModels.Round.create({
+        game_id: this.dbGame.id,
+        round_number: this.round,
+        num_active_players: _.filter(this.players, ({ isActive }) => isActive).length,
+        total_players: this.players.length,
+        questionID,
+      }).then((round) => {
+        this.dbCurrentRound = round;
+      });
     }
   }
 
@@ -328,8 +327,8 @@ class Game {
   }
 
   /**
-     * Pause game
-     */
+   * Pause game
+   */
   pause() {
     // check if game is already paused
     if (this.state === STATES.PAUSED) {
@@ -357,8 +356,8 @@ class Game {
   }
 
   /**
-     * Resume game
-     */
+   * Resume game
+   */
   resume() {
     // make sure game is paused
     if (this.state !== STATES.PAUSED) {
@@ -391,8 +390,8 @@ class Game {
   }
 
   /**
-     * Start next round
-     */
+   * Start next round
+   */
   nextRound() {
     clearTimeout(this.stopTimeout);
     // check if any player reached the point limit
@@ -413,8 +412,9 @@ class Game {
     // check that there's enough players in the game
     if (_.filter(this.players, { isActive: true }).length < 3) {
       this.say(
-        `Not enough players to start a round (need at least 3). Waiting for others to join. Stopping in ${this
-          .config.gameOptions.roundMinutes} ${inflection.inflect(
+        `Not enough players to start a round (need at least 3). Waiting for others to join. Stopping in ${
+          this.config.gameOptions.roundMinutes
+        } ${inflection.inflect(
           'minutes',
           this.config.gameOptions.roundMinutes,
         )} if not enough players.`,
@@ -448,9 +448,9 @@ class Game {
   }
 
   /**
-     * Set a new czar
-     * @returns Player The player object who is the new czar
-     */
+   * Set a new czar
+   * @returns Player The player object who is the new czar
+   */
   setCzar() {
     if (this.czar) {
       console.log(`Old czar: ${this.czar.nick}`);
@@ -483,8 +483,8 @@ class Game {
   }
 
   /**
-     * Deal cards to fill players' hands
-     */
+   * Deal cards to fill players' hands
+   */
   deal(targetPlayer, num) {
     if (_.isUndefined(targetPlayer)) {
       _.forEach(
@@ -492,7 +492,9 @@ class Game {
         _.bind((player) => {
           if (player.isActive) {
             console.log(
-              `${player.nick}(${player.hostname}) has ${player.cards.numCards()} cards. Dealing ${10 -
+              `${player.nick}(${
+                player.hostname
+              }) has ${player.cards.numCards()} cards. Dealing ${10 -
                 player.cards.numCards()} cards`,
             );
             for (let i = player.cards.numCards(); i < 10; i += 1) {
@@ -515,8 +517,8 @@ class Game {
   }
 
   /**
-     * Clean up table after round is complete
-     */
+   * Clean up table after round is complete
+   */
   clean() {
     // move cards from table to discard
     this.discards.question.addCard(this.table.question);
@@ -564,8 +566,8 @@ class Game {
   }
 
   /**
-     * Play new question card on the table
-     */
+   * Play new question card on the table
+   */
   playQuestion() {
     this.checkDecks();
     const card = this.decks.question.pickCards();
@@ -603,10 +605,10 @@ class Game {
   }
 
   /**
-     * Play a answer card from players hand
-     * @param cards card indexes in players hand
-     * @param player Player who played the cards
-     */
+   * Play a answer card from players hand
+   * @param cards card indexes in players hand
+   * @param player Player who played the cards
+   */
   playCard(rawCards, player) {
     // don't allow if game is paused
     if (this.state === STATES.PAUSED) {
@@ -622,7 +624,9 @@ class Game {
     } else if (!_.isUndefined(player)) {
       if (player.isCzar === true) {
         this.say(
-          `${player.nick}: You are the card czar. The czar does not play. The czar makes other people do their dirty work.`,
+          `${
+            player.nick
+          }: You are the card czar. The czar does not play. The czar makes other people do their dirty work.`,
         );
       } else if (player.hasPlayed === true) {
         this.say(`${player.nick}: You have already played on this round.`);
@@ -667,10 +671,10 @@ class Game {
   }
 
   /**
-     * Allow a player to discard a number of cards once per turn
-     * @param cards Array of card indexes to discard
-     * @param player The player who discarded
-     */
+   * Allow a player to discard a number of cards once per turn
+   * @param cards Array of card indexes to discard
+   * @param player The player who discarded
+   */
   discard(rawCards, player) {
     if (this.state === STATES.PAUSED) {
       this.say('Game is currently paused');
@@ -685,7 +689,9 @@ class Game {
     } else if (!_.isUndefined(player)) {
       if (player.isCzar === true) {
         this.say(
-          `${player.nick}: You are the card czar. You cannot discard cards until you are a regular player.`,
+          `${
+            player.nick
+          }: You are the card czar. You cannot discard cards until you are a regular player.`,
         );
       } else if (player.hasDiscarded === true) {
         this.say(`${player.nick}: You may only discard once per turn.`);
@@ -735,9 +741,9 @@ class Game {
   }
 
   /**
-     * Check the time that has elapsed since the beinning of the turn.
-     * End the turn is time limit is up
-     */
+   * Check the time that has elapsed since the beinning of the turn.
+   * End the turn is time limit is up
+   */
   turnTimerCheck() {
     // check the time
     const now = new Date();
@@ -764,8 +770,8 @@ class Game {
   }
 
   /**
-     * Show the entries
-     */
+   * Show the entries
+   */
   showEntries() {
     // clear round timer
     clearInterval(this.turnTimer);
@@ -807,9 +813,9 @@ class Game {
   }
 
   /**
-     * Check the time that has elapsed since the beinning of the winner select.
-     * End the turn is time limit is up
-     */
+   * Check the time that has elapsed since the beinning of the winner select.
+   * End the turn is time limit is up
+   */
   winnerTimerCheck() {
     // check the time
     const now = new Date();
@@ -841,10 +847,10 @@ class Game {
   }
 
   /**
-     * Pick an entry that wins the round
-     * @param index Index of the winning card in table list
-     * @param player Player who said the command (use null for internal calls, to ignore checking)
-     */
+   * Pick an entry that wins the round
+   * @param index Index of the winning card in table list
+   * @param player Player who said the command (use null for internal calls, to ignore checking)
+   */
   selectWinner(index, player) {
     // don't allow if game is paused
     if (this.state === STATES.PAUSED) {
@@ -872,10 +878,9 @@ class Game {
           `${c.bold('Winner is: ') + owner.nick} with "${this.getFullEntry(
             this.table.question,
             winner.getCards(),
-          )}" and gets one awesome point! ${owner.nick} has ${owner.points} awesome ${inflection.inflect(
-            'point',
-            owner.points,
-          )}.`,
+          )}" and gets one awesome point! ${owner.nick} has ${
+            owner.points
+          } awesome ${inflection.inflect('point', owner.points)}.`,
         );
 
         const round = this.dbCurrentRound;
@@ -888,11 +893,11 @@ class Game {
   }
 
   /**
-     * Get formatted entry
-     * @param question
-     * @param answers
-     * @returns {*|Object|ServerResponse}
-     */
+   * Get formatted entry
+   * @param question
+   * @param answers
+   * @returns {*|Object|ServerResponse}
+   */
   getFullEntry({ value }, answers) {
     const args = [value];
     _.forEach(
@@ -905,9 +910,9 @@ class Game {
   }
 
   /**
-     * Check if all active players played on the current round
-     * @returns Boolean true if all players have played
-     */
+   * Check if all active players played on the current round
+   * @returns Boolean true if all players have played
+   */
   checkAllPlayed() {
     let allPlayed = false;
     if (this.getNotPlayed().length === 0) {
@@ -917,8 +922,8 @@ class Game {
   }
 
   /**
-     * Check if decks are empty & reset with discards
-     */
+   * Check if decks are empty & reset with discards
+   */
   checkDecks() {
     // check answer deck
     if (this.decks.answer.numCards() === 0) {
@@ -935,10 +940,10 @@ class Game {
   }
 
   /**
-     * Add a player to the game
-     * @param player Player object containing new player's data
-     * @returns The new player or false if invalid player
-     */
+   * Add a player to the game
+   * @param player Player object containing new player's data
+   * @returns The new player or false if invalid player
+   */
   addPlayer(player) {
     if (this.config.gameOptions.database === true && _.isUndefined(this.dbGame)) {
       this.playersToAdd.push(player);
@@ -963,7 +968,9 @@ class Game {
           _.filter(this.players, { isActive: true }).length >= this.config.gameOptions.maxPlayers
         ) {
           this.say(
-            `${player.nick}: You cannot join right now as the maximum number of players have joined the game`,
+            `${
+              player.nick
+            }: You cannot join right now as the maximum number of players have joined the game`,
           );
           return false;
         }
@@ -973,7 +980,9 @@ class Game {
           _.filter(this.players, { isActive: true }).length >= this.config.gameOptions.maxPlayers
         ) {
           this.say(
-            `${player.nick}: You cannot join right now as the maximum number of players have joined the game`,
+            `${
+              player.nick
+            }: You cannot join right now as the maximum number of players have joined the game`,
           );
           return false;
         }
@@ -999,20 +1008,20 @@ class Game {
   }
 
   /**
-     * Find player
-     * @param search
-     * @returns {*}
-     */
+   * Find player
+   * @param search
+   * @returns {*}
+   */
   getPlayer(search) {
     return _.find(this.players, search);
   }
 
   /**
-     * Remove player from game
-     * @param player
-     * @param options Extra options
-     * @returns The removed player or false if invalid player
-     */
+   * Remove player from game
+   * @param player
+   * @param options Extra options
+   * @returns The removed player or false if invalid player
+   */
   removePlayer(player, args) {
     const options = _.assignIn({}, args);
     if (!_.isUndefined(player) && player.isActive) {
@@ -1059,9 +1068,9 @@ class Game {
   }
 
   /**
-     * Get all player who have not played
-     * @returns Array list of Players that have not played
-     */
+   * Get all player who have not played
+   * @returns Array list of Players that have not played
+   */
   getNotPlayed() {
     return _.filter(
       // check only players with cards (so players who joined in the middle of a round are ignored)
@@ -1071,8 +1080,8 @@ class Game {
   }
 
   /**
-     * Check for inactive players
-     */
+   * Check for inactive players
+   */
   markInactivePlayers() {
     _.forEach(
       this.getNotPlayed(),
@@ -1083,9 +1092,9 @@ class Game {
   }
 
   /**
-     * Show players cards to player
-     * @param player
-     */
+   * Show players cards to player
+   * @param player
+   */
   showCards(player) {
     if (!_.isUndefined(player)) {
       let cardsZeroToSix = 'Your cards are:';
@@ -1107,8 +1116,8 @@ class Game {
   }
 
   /**
-     * Show points for all players
-     */
+   * Show points for all players
+   */
   showPoints() {
     const sortedPlayers = _.sortBy(this.players, ({ points }) => -points);
     let output = '';
@@ -1119,8 +1128,8 @@ class Game {
   }
 
   /**
-     * Show status
-     */
+   * Show status
+   */
   showStatus() {
     // amount of player needed to start the game
     const timeLeft =
@@ -1160,12 +1169,9 @@ class Game {
         break;
       case STATES.WAITING:
         this.say(
-          `${c.bold(
-            'Status: ',
-          )}Not enough players to start. Need ${playersNeeded} more ${inflection.inflect(
-            'players',
-            playersNeeded,
-          )} to start.`,
+          `${c.bold('Status: ')}Not enough players to start. Need ${
+            playersNeeded
+          } more ${inflection.inflect('players', playersNeeded)} to start.`,
         );
         break;
       case STATES.PAUSED:
@@ -1177,8 +1183,8 @@ class Game {
   }
 
   /**
-     * Set the channel topic
-     */
+   * Set the channel topic
+   */
   setTopic(topic) {
     // ignore if not configured to set topic
     if (_.isUndefined(this.config.gameOptions.setTopic) || !this.config.gameOptions.setTopic) {
@@ -1196,8 +1202,8 @@ class Game {
   }
 
   /**
-     * List all players in the current game
-     */
+   * List all players in the current game
+   */
   listPlayers() {
     const activePlayers = _.filter(this.players, ({ isActive }) => isActive);
 
@@ -1209,37 +1215,37 @@ class Game {
   }
 
   /**
-     * Helper function for the handlers below
-     */
+   * Helper function for the handlers below
+   */
   findAndRemoveIfPlaying(nick) {
     const player = this.getPlayer({ nick });
     if (!_.isUndefined(player)) this.removePlayer(player);
   }
 
   /**
-     * Handle player parts
-     * @param channel
-     * @param nick
-     */
+   * Handle player parts
+   * @param channel
+   * @param nick
+   */
   playerPartHandler(chan, nick) {
     console.log(`Player ${nick} left`);
     this.findAndRemoveIfPlaying(nick);
   }
 
   /**
-     * Handle player kicks
-     * @param nick
-     * @param by
-     */
+   * Handle player kicks
+   * @param nick
+   * @param by
+   */
   playerKickHandler(nick, by) {
     console.log(`Player ${nick} was kicked by ${by}`);
     this.findAndRemoveIfPlaying(nick);
   }
 
   /**
-     * Handle player kicks
-     * @param nick
-     */
+   * Handle player kicks
+   * @param nick
+   */
   playerQuitHandler(nick) {
     console.log(`Player ${nick} left`);
     this.findAndRemoveIfPlaying(nick);
@@ -1283,8 +1289,9 @@ class Game {
       if (_.includes(exemptModes, mode) && nick !== this.config.botOptions.nick) {
         this.notice(
           nick,
-          `${nick}: A new game of Cards Against Humanity just began in ${this
-            .channel}. Head over and !join if you'd like to get in on the fun!`,
+          `${nick}: A new game of Cards Against Humanity just began in ${
+            this.channel
+          }. Head over and !join if you'd like to get in on the fun!`,
         );
       }
     });

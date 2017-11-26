@@ -41,7 +41,8 @@
   },
   {
     "type": "Question",
-    "value": "We're not like other news organizations. Here at Slugline, we welcome %s in the office.",
+    "value":
+      "We're not like other news organizations. Here at Slugline, we welcome %s in the office.",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,
@@ -57,7 +58,8 @@
   },
   {
     "type": "Question",
-    "value": "Cancel all my meetings. We've got a situation with %s that requires my immediate attention.",
+    "value":
+      "Cancel all my meetings. We've got a situation with %s that requires my immediate attention.",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,
@@ -65,7 +67,8 @@
   },
   {
     "type": "Question",
-    "value": "If you need him to, Remy Danton can pull some strings and get you %s, but it'll cost you.",
+    "value":
+      "If you need him to, Remy Danton can pull some strings and get you %s, but it'll cost you.",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,

@@ -9,8 +9,8 @@ class CardsAgainstHumanity {
   /**
    * Initialise Plugin
    */
-  constructor() {
-    this.config = config;
+  constructor(conf) {
+    this.config = config(conf);
     this.wikiUrl = 'https://github.com/butlerx/butlerbot/wiki/Cards-Against-Humanity';
   }
 
@@ -34,7 +34,7 @@ class CardsAgainstHumanity {
     } else {
       // init game
       const player = new Player(nick, user, hostname);
-      const newGame = new Game(channel, client, this.config, cmdArgs, dbModels);
+      const newGame = new Game(channel, client, this.config, cmdArgs, dbModels(this.config.db));
       this.game = newGame;
       this.game.addPlayer(player);
     }

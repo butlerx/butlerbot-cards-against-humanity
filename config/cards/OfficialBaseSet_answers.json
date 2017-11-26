@@ -3289,7 +3289,8 @@
   },
   {
     "type": "Answer",
-    "value": "Getting married, having a few kids, buying some stuff, retiring to Florida, and dying.",
+    "value":
+      "Getting married, having a few kids, buying some stuff, retiring to Florida, and dying.",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,

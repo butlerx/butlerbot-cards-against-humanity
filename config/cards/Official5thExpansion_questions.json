@@ -9,7 +9,8 @@
   },
   {
     "type": "Question",
-    "value": "Armani suit: $1000. Dinner for two at that swanky restaurant: $300. The look on her face when you surprise her with %s: priceless.",
+    "value":
+      "Armani suit: $1000. Dinner for two at that swanky restaurant: $300. The look on her face when you surprise her with %s: priceless.",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,
@@ -17,7 +18,8 @@
   },
   {
     "type": "Question",
-    "value": "In his new action comedy, Jackie Chan must fend off ninjas while also dealing with %s.",
+    "value":
+      "In his new action comedy, Jackie Chan must fend off ninjas while also dealing with %s.",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,
@@ -25,7 +27,8 @@
   },
   {
     "type": "Question",
-    "value": "Well what do you have to say for yourself, Casey? This is the third time you've been sent to the prinicpal's office for %s.",
+    "value":
+      "Well what do you have to say for yourself, Casey? This is the third time you've been sent to the prinicpal's office for %s.",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,
@@ -33,7 +36,8 @@
   },
   {
     "type": "Question",
-    "value": "Here at the Academy for Gifted Children, we allow students to explore %s at their own pace.",
+    "value":
+      "Here at the Academy for Gifted Children, we allow students to explore %s at their own pace.",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,
@@ -73,7 +77,8 @@
   },
   {
     "type": "Question",
-    "value": "Hi MTV! My name is Kendra, I live in Malibu, I'm into %s, and I love to have a good time.",
+    "value":
+      "Hi MTV! My name is Kendra, I live in Malibu, I'm into %s, and I love to have a good time.",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,
@@ -105,7 +110,8 @@
   },
   {
     "type": "Question",
-    "value": "Get ready for the movie of the summer! One cop plays by the book. The other's only interested in one thing: %s.",
+    "value":
+      "Get ready for the movie of the summer! One cop plays by the book. The other's only interested in one thing: %s.",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,
@@ -121,7 +127,8 @@
   },
   {
     "type": "Question",
-    "value": "In his farewell address, George Washington famously warned Americans about the dangers of %s.",
+    "value":
+      "In his farewell address, George Washington famously warned Americans about the dangers of %s.",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,
@@ -129,7 +136,8 @@
   },
   {
     "type": "Question",
-    "value": "Don't forget! Beginning this week, Casual Friday will officially become \"%s Friday.\"",
+    "value":
+      "Don't forget! Beginning this week, Casual Friday will officially become \"%s Friday.\"",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,
@@ -161,7 +169,8 @@
   },
   {
     "type": "Question",
-    "value": "Hi, this is Jim from accounting. We noticed a €1,200 charge labeled \"%s\". Can you explain?",
+    "value":
+      "Hi, this is Jim from accounting. We noticed a €1,200 charge labeled \"%s\". Can you explain?",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,
@@ -169,7 +178,8 @@
   },
   {
     "type": "Question",
-    "value": "Do you lack energy? Does it sometimes feel like the whole world is %s? Zoloft can help.",
+    "value":
+      "Do you lack energy? Does it sometimes feel like the whole world is %s? Zoloft can help.",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,

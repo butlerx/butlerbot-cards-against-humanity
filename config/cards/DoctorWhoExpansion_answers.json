@@ -177,7 +177,8 @@
   },
   {
     "type": "Answer",
-    "value": "Wanting to punch that teeny-bopper Whovian that's butthurt the new Doctor isn't in his twenties",
+    "value":
+      "Wanting to punch that teeny-bopper Whovian that's butthurt the new Doctor isn't in his twenties",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,
@@ -409,7 +410,8 @@
   },
   {
     "type": "Answer",
-    "value": "A global simulcast that forces Whovians to see the sunlight for the first time in ages",
+    "value":
+      "A global simulcast that forces Whovians to see the sunlight for the first time in ages",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,

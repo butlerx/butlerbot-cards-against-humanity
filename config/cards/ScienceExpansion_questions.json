@@ -1,7 +1,8 @@
 [
   {
     "type": "Question",
-    "value": "In line with our predictions, we find a robust correlation between %s and %s (p < .05).",
+    "value":
+      "In line with our predictions, we find a robust correlation between %s and %s (p < .05).",
     "keep": "Yes",
     "draw": 1,
     "pick": 2,
@@ -9,7 +10,8 @@
   },
   {
     "type": "Question",
-    "value": "In what's being hailed as a major breakthrough, scientists have synthesized %s in the lab.",
+    "value":
+      "In what's being hailed as a major breakthrough, scientists have synthesized %s in the lab.",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,
@@ -25,7 +27,8 @@
   },
   {
     "type": "Question",
-    "value": "In an attempt to recreate conditions just after the Big Bang, physicists at the LHC are observing collisions between %s and %s",
+    "value":
+      "In an attempt to recreate conditions just after the Big Bang, physicists at the LHC are observing collisions between %s and %s",
     "keep": "Yes",
     "draw": 1,
     "pick": 2,
@@ -41,7 +44,8 @@
   },
   {
     "type": "Question",
-    "value": "Hey there, Young Scientists! Put on your labcoats and strap on your safety goggles, because today we're learning about %s",
+    "value":
+      "Hey there, Young Scientists! Put on your labcoats and strap on your safety goggles, because today we're learning about %s",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,

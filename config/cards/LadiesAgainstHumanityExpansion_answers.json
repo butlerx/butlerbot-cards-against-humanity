@@ -489,7 +489,8 @@
   },
   {
     "type": "Answer",
-    "value": "Calmly informing your date that you understand the infield fly rule better than he does",
+    "value":
+      "Calmly informing your date that you understand the infield fly rule better than he does",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,
@@ -601,7 +602,8 @@
   },
   {
     "type": "Answer",
-    "value": "Watching Bethenny Frankel struggle for life in a churning sea of pre-mixed SkinnyGirl cocktails",
+    "value":
+      "Watching Bethenny Frankel struggle for life in a churning sea of pre-mixed SkinnyGirl cocktails",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,
@@ -689,7 +691,8 @@
   },
   {
     "type": "Answer",
-    "value": "Asking Larry Summers increasingly difficult mathematical questions until Bar and Bat Mitzvahs are considered equally important",
+    "value":
+      "Asking Larry Summers increasingly difficult mathematical questions until Bar and Bat Mitzvahs are considered equally important",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,

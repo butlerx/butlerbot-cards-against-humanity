@@ -33,7 +33,8 @@
   },
   {
     "type": "Question",
-    "value": "In a Congressional hearing, US CYBERCOM commander Gen. Alexander claimed the latest data breach was due to %s.",
+    "value":
+      "In a Congressional hearing, US CYBERCOM commander Gen. Alexander claimed the latest data breach was due to %s.",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,
@@ -617,7 +618,8 @@
   },
   {
     "type": "Question",
-    "value": "One day, over my fireplace, I'm going to have a massive painting of %s. You know, to remind me where I came from.",
+    "value":
+      "One day, over my fireplace, I'm going to have a massive painting of %s. You know, to remind me where I came from.",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,

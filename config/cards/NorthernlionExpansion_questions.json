@@ -233,7 +233,8 @@
   },
   {
     "type": "Question",
-    "value": "Of all the things that Ryan and Josh have in common, they bond together through their mutual love of %s.",
+    "value":
+      "Of all the things that Ryan and Josh have in common, they bond together through their mutual love of %s.",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,
@@ -553,7 +554,8 @@
   },
   {
     "type": "Question",
-    "value": "Northernlion was fired from his teaching job and had to flee South Korea after an incident involving %s and %s.",
+    "value":
+      "Northernlion was fired from his teaching job and had to flee South Korea after an incident involving %s and %s.",
     "keep": "Yes",
     "draw": 1,
     "pick": 2,
@@ -561,7 +563,8 @@
   },
   {
     "type": "Question",
-    "value": "Northernlion's doctor diagnosed him today with %s, an unfortunate condition that would lead to %s.",
+    "value":
+      "Northernlion's doctor diagnosed him today with %s, an unfortunate condition that would lead to %s.",
     "keep": "Yes",
     "draw": 1,
     "pick": 2,
@@ -673,7 +676,8 @@
   },
   {
     "type": "Question",
-    "value": "That's the way %s did it, that's the way %s does it, and it''s worked out pretty well so far.",
+    "value":
+      "That's the way %s did it, that's the way %s does it, and it''s worked out pretty well so far.",
     "keep": "Yes",
     "draw": 1,
     "pick": 2,
@@ -697,7 +701,8 @@
   },
   {
     "type": "Question",
-    "value": "Ohmwrecker is known for his MLG online play. What people don't know is that he's also MLG at %s.",
+    "value":
+      "Ohmwrecker is known for his MLG online play. What people don't know is that he's also MLG at %s.",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,
@@ -713,7 +718,8 @@
   },
   {
     "type": "Question",
-    "value": "Green loves the new Paranautical Activity item %s, but keeps comparing it to the crossbow.",
+    "value":
+      "Green loves the new Paranautical Activity item %s, but keeps comparing it to the crossbow.",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,

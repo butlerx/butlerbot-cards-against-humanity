@@ -25,7 +25,8 @@
   },
   {
     "type": "Question",
-    "value": "%s in the front seat; %s in the back seat; gotta make my mind up, which seat do I take?",
+    "value":
+      "%s in the front seat; %s in the back seat; gotta make my mind up, which seat do I take?",
     "keep": "Yes",
     "draw": 1,
     "pick": 2,
@@ -241,7 +242,8 @@
   },
   {
     "type": "Question",
-    "value": "A little-known fact is that Microsoft Windows was originally slated to be the first operating system to include %s.",
+    "value":
+      "A little-known fact is that Microsoft Windows was originally slated to be the first operating system to include %s.",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,
@@ -257,7 +259,8 @@
   },
   {
     "type": "Question",
-    "value": "According to an old Romanian superstition, %s will happen if you don't %s before going to bed.",
+    "value":
+      "According to an old Romanian superstition, %s will happen if you don't %s before going to bed.",
     "keep": "Yes",
     "draw": 1,
     "pick": 2,
@@ -281,7 +284,8 @@
   },
   {
     "type": "Question",
-    "value": "And then little Billy woke up the next morning, he discovered that the tooth fairy had left %s under his pillow.",
+    "value":
+      "And then little Billy woke up the next morning, he discovered that the tooth fairy had left %s under his pillow.",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,
@@ -377,7 +381,8 @@
   },
   {
     "type": "Question",
-    "value": "For campaign funding reform to really be effective, there needs to be a specific policy about %s contributions.",
+    "value":
+      "For campaign funding reform to really be effective, there needs to be a specific policy about %s contributions.",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,
@@ -385,7 +390,8 @@
   },
   {
     "type": "Question",
-    "value": "The Westboro Baptist Church have just announced that they plan to start picketing the funerals of %s too.",
+    "value":
+      "The Westboro Baptist Church have just announced that they plan to start picketing the funerals of %s too.",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,
@@ -497,7 +503,8 @@
   },
   {
     "type": "Question",
-    "value": "I firmly believe that for the economy to recover, the Department of %s needs to change its policies on %s.",
+    "value":
+      "I firmly believe that for the economy to recover, the Department of %s needs to change its policies on %s.",
     "keep": "Yes",
     "draw": 1,
     "pick": 2,
@@ -681,7 +688,8 @@
   },
   {
     "type": "Question",
-    "value": "In an astonishing and ground-breaking decision, the Supreme Court has decided in favor of %s.",
+    "value":
+      "In an astonishing and ground-breaking decision, the Supreme Court has decided in favor of %s.",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,
@@ -689,7 +697,8 @@
   },
   {
     "type": "Question",
-    "value": "In Nintendo's new game, you must fight off wave after wave of %s in order to save %s.",
+    "value":
+      "In Nintendo's new game, you must fight off wave after wave of %s in order to save %s.",
     "keep": "Yes",
     "draw": 1,
     "pick": 2,
@@ -745,7 +754,8 @@
   },
   {
     "type": "Question",
-    "value": "It is often argued that our ancestors would have never evolved without the aid of %s.",
+    "value":
+      "It is often argued that our ancestors would have never evolved without the aid of %s.",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,
@@ -1241,7 +1251,8 @@
   },
   {
     "type": "Question",
-    "value": "This year's Pulitzer Prize winning novel was chosen for its brilliant %s, as a metaphor for %s.",
+    "value":
+      "This year's Pulitzer Prize winning novel was chosen for its brilliant %s, as a metaphor for %s.",
     "keep": "Yes",
     "draw": 1,
     "pick": 2,
@@ -1617,7 +1628,8 @@
   },
   {
     "type": "Question",
-    "value": "With the Democrats and Republicans in a dead heat, the election was stolen by the %s party.",
+    "value":
+      "With the Democrats and Republicans in a dead heat, the election was stolen by the %s party.",
     "keep": "Yes",
     "draw": 0,
     "pick": 1,

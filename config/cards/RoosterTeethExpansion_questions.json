@@ -89,7 +89,8 @@
   },
   {
     "type": "Question",
-    "value": "The war's over. We're holding a parade in %s's honor. %s drives the float, and %s is in charge of confetti",
+    "value":
+      "The war's over. We're holding a parade in %s's honor. %s drives the float, and %s is in charge of confetti",
     "keep": "Yes",
     "draw": 2,
     "pick": 3,
