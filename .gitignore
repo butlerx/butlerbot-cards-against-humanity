@@ -27,4 +27,5 @@ build/Release
 node_modules
 .esm-cache
 .DS_Store
-challenge.json
+config/cards/Custom_q.json
+config/cards/Custom_a.json
